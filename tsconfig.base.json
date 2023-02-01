@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@zod-async-validation/models": ["libs/models/src/index.ts"]
+      "@zod-async-validation/models": ["libs/models/src/index.ts"],
+      "@zod-async-validation/repositories": ["libs/repositories/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
