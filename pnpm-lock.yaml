@@ -7,6 +7,7 @@ specifiers:
   '@nrwl/jest': 15.6.3
   '@nrwl/js': 15.6.3
   '@nrwl/linter': 15.6.3
+  '@nrwl/next': ^15.6.3
   '@nrwl/nx-cloud': latest
   '@nrwl/react': 15.6.3
   '@nrwl/vite': 15.6.3
@@ -66,6 +67,7 @@ devDependencies:
   '@nrwl/jest': 15.6.3_4e23wtoi6ep4vxxphsoq3dqysi
   '@nrwl/js': 15.6.3_niqd3hdk7vpad7e2t7c2ooltle
   '@nrwl/linter': 15.6.3_2gweb7o7pkltzmj3jx6phpvxki
+  '@nrwl/next': 15.6.3_tc2ae2q2oihjt5mnpfywhkbhae
   '@nrwl/nx-cloud': 15.0.3
   '@nrwl/react': 15.6.3_niqd3hdk7vpad7e2t7c2ooltle
   '@nrwl/vite': 15.6.3_wbcv54vqbl567gf4udaylmrbja
@@ -189,6 +191,24 @@ packages:
       browserslist: 4.21.5
       lru-cache: 5.1.1
       semver: 6.3.0
+    dev: true
+
+  /@babel/helper-create-class-features-plugin/7.20.12:
+    resolution: {integrity: sha512-9OunRkbT0JQcednL0UFvbfXpAsUXiGjUk0a7sN8fUXX7Mue79cUSMjHGDRRi/Vz9vYlpIhLV5fMD5dKoMhhsNQ==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    dependencies:
+      '@babel/helper-annotate-as-pure': 7.18.6
+      '@babel/helper-environment-visitor': 7.18.9
+      '@babel/helper-function-name': 7.19.0
+      '@babel/helper-member-expression-to-functions': 7.20.7
+      '@babel/helper-optimise-call-expression': 7.18.6
+      '@babel/helper-replace-supers': 7.20.7
+      '@babel/helper-skip-transparent-expression-wrappers': 7.20.0
+      '@babel/helper-split-export-declaration': 7.18.6
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@babel/helper-create-class-features-plugin/7.20.12_@babel+core@7.20.12:
@@ -475,6 +495,21 @@ packages:
       - supports-color
     dev: true
 
+  /@babel/plugin-proposal-decorators/7.20.13:
+    resolution: {integrity: sha512-7T6BKHa9Cpd7lCueHBBzP0nkXNina+h5giOZw+a8ZpMfPFY19VjJAjIxyFHuWkhCWgL6QMqRiY/wB1fLXzm6Mw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/helper-create-class-features-plugin': 7.20.12
+      '@babel/helper-plugin-utils': 7.20.2
+      '@babel/helper-replace-supers': 7.20.7
+      '@babel/helper-split-export-declaration': 7.18.6
+      '@babel/plugin-syntax-decorators': 7.19.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@babel/plugin-proposal-decorators/7.20.13_@babel+core@7.20.12:
     resolution: {integrity: sha512-7T6BKHa9Cpd7lCueHBBzP0nkXNina+h5giOZw+a8ZpMfPFY19VjJAjIxyFHuWkhCWgL6QMqRiY/wB1fLXzm6Mw==}
     engines: {node: '>=6.9.0'}
@@ -691,6 +726,15 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.20.12
+      '@babel/helper-plugin-utils': 7.20.2
+    dev: true
+
+  /@babel/plugin-syntax-decorators/7.19.0:
+    resolution: {integrity: sha512-xaBZUEDntt4faL1yN8oIFlhfXeQAWJW7CLKYsHTUqriCUbj8xOra8bfxxKGi/UwExPFBuPdH4XfHc9rGQhrVkQ==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
       '@babel/helper-plugin-utils': 7.20.2
     dev: true
 
@@ -2455,6 +2499,60 @@ packages:
     transitivePeerDependencies:
       - nx
       - typescript
+    dev: true
+
+  /@nrwl/next/15.6.3_tc2ae2q2oihjt5mnpfywhkbhae:
+    resolution: {integrity: sha512-yLXBCx/O5HKDvJvG7xrtU9TASWr+gF9Cy+XNvTEqERb8e/evXCpI0yjErON6WsVeo/Rthv+pSBCtJJzvoOqM4Q==}
+    peerDependencies:
+      next: ^13.0.0
+    dependencies:
+      '@babel/plugin-proposal-decorators': 7.20.13
+      '@nrwl/cypress': 15.6.3_lkd4tncbde7zhafwvt765tpoxq
+      '@nrwl/devkit': 15.6.3_nx@15.6.3+typescript@4.8.4
+      '@nrwl/jest': 15.6.3_4e23wtoi6ep4vxxphsoq3dqysi
+      '@nrwl/linter': 15.6.3_2gweb7o7pkltzmj3jx6phpvxki
+      '@nrwl/react': 15.6.3_niqd3hdk7vpad7e2t7c2ooltle
+      '@nrwl/webpack': 15.6.3_2v7yhsupl4t2vd7ay57jndyhgq
+      '@nrwl/workspace': 15.6.3_ru3a6u6i5jfe3w3i7orrmgwxwa
+      '@svgr/webpack': 6.5.1
+      chalk: 4.1.2
+      dotenv: 10.0.0
+      fs-extra: 11.1.0
+      ignore: 5.2.4
+      semver: 7.3.4
+      ts-node: 10.9.1_cbe7ovvae6zqfnmtgctpgpys54
+      tsconfig-paths: 4.1.2
+      url-loader: 4.1.1
+      webpack-merge: 5.8.0
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@parcel/css'
+      - '@swc-node/register'
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - bufferutil
+      - clean-css
+      - csso
+      - cypress
+      - debug
+      - esbuild
+      - eslint
+      - fibers
+      - file-loader
+      - html-webpack-plugin
+      - node-notifier
+      - node-sass
+      - nx
+      - prettier
+      - sass-embedded
+      - supports-color
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack
+      - webpack-cli
     dev: true
 
   /@nrwl/nx-cloud/15.0.3:
